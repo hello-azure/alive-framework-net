@@ -1,0 +1,15 @@
+E:\基础库\Output\Engine\Alive.Engine.Search.Compiler.dll
+E:\基础库\Output\Engine\Alive.Engine.Search.Compiler.pdb
+E:\基础库\Platform\Engine\Compiler\obj\Debug\ResolveAssemblyReference.cache
+E:\基础库\Platform\Engine\Compiler\obj\Debug\Alive.Engine.Search.Compiler.dll
+E:\基础库\Platform\Engine\Compiler\obj\Debug\Alive.Engine.Search.Compiler.pdb
+E:\TTTTTTTTTTTTTTTTTTTTT\Alive\Output\Engine\Alive.Engine.Search.Compiler.dll
+E:\TTTTTTTTTTTTTTTTTTTTT\Alive\Output\Engine\Alive.Engine.Search.Compiler.pdb
+E:\TTTTTTTTTTTTTTTTTTTTT\Alive\Platform\Engine\Compiler\obj\Debug\ResolveAssemblyReference.cache
+E:\TTTTTTTTTTTTTTTTTTTTT\Alive\Platform\Engine\Compiler\obj\Debug\Alive.Engine.Search.Compiler.dll
+E:\TTTTTTTTTTTTTTTTTTTTT\Alive\Platform\Engine\Compiler\obj\Debug\Alive.Engine.Search.Compiler.pdb
+C:\Users\lionth\Desktop\me\Alive\Output\Engine\Alive.Engine.Search.Compiler.dll
+C:\Users\lionth\Desktop\me\Alive\Output\Engine\Alive.Engine.Search.Compiler.pdb
+C:\Users\lionth\Desktop\me\Alive\Platform\Engine\Compiler\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lionth\Desktop\me\Alive\Platform\Engine\Compiler\obj\Debug\Alive.Engine.Search.Compiler.dll
+C:\Users\lionth\Desktop\me\Alive\Platform\Engine\Compiler\obj\Debug\Alive.Engine.Search.Compiler.pdb

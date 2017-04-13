@@ -1,0 +1,11 @@
+E:\基础库\Test\CommunicationApp\bin\Debug\CommunicationApp.exe.config
+E:\基础库\Test\CommunicationApp\bin\Debug\CommunicationApp.exe
+E:\基础库\Test\CommunicationApp\bin\Debug\CommunicationApp.pdb
+E:\基础库\Test\CommunicationApp\bin\Debug\Alive.Foundation.Data.dll
+E:\基础库\Test\CommunicationApp\bin\Debug\Alive.Foundation.Data.pdb
+E:\基础库\Test\CommunicationApp\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\基础库\Test\CommunicationApp\obj\x86\Debug\CommunicationApp.Properties.Resources.resources
+E:\基础库\Test\CommunicationApp\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\基础库\Test\CommunicationApp\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\基础库\Test\CommunicationApp\obj\x86\Debug\CommunicationApp.exe
+E:\基础库\Test\CommunicationApp\obj\x86\Debug\CommunicationApp.pdb

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template>
+  <TitleComments>
+    <Comment>版权声明：</Comment>
+    <Comment>   本文件是 万物生基础平台 程序的一部分。</Comment>
+    <Comment>   版本：V 1.0</Comment>
+    <Comment>   Copyright AliveSoft Xiaoqiang.HE 2013 保留一切权利</Comment>
+  </TitleComments>
+  <Usings>
+    <using>Alive.Foundation.Data</using>
+    <using>Alive.Foundation.Data.DataFields</using>
+  </Usings>
+  <NameSpace name="Test.Storage"/>
+  <Class visibility="public" name="DbHelper">
+    <DocumentComment>
+      <Comment>抽象</Comment>
+    </DocumentComment>
+    <Methord overloaded="5"/>
+  </Class>
+</Template>
+

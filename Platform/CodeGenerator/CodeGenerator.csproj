@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0788ECDE-7366-4484-9EE5-FF944CE316C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alive.Tools.CodeGenerator</RootNamespace>
+    <AssemblyName>Alive.Tools.CodeGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Tools\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binaries\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor">
+      <HintPath>..\..\Reference\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ExceptionMessageBox, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Microsoft.ExceptionMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.BaseCodeGeneratorWithSite">
+      <HintPath>..\..\Reference\Microsoft.VisualStudio.BaseCodeGeneratorWithSite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AssemblyTool.cs" />
+    <Compile Include="Form_AliveStandardDal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AliveStandardDal.Designer.cs">
+      <DependentUpon>Form_AliveStandardDal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BatchGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BatchGenerator.Designer.cs">
+      <DependentUpon>Form_BatchGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GlobalSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GlobalSettings.Designer.cs">
+      <DependentUpon>Form_GlobalSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TemplateManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TemplateManager.Designer.cs">
+      <DependentUpon>Form_TemplateManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TemplateSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TemplateSettings.Designer.cs">
+      <DependentUpon>Form_TemplateSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\DataSourceEventArgs.cs" />
+    <Compile Include="Form_AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AboutBox.Designer.cs">
+      <DependentUpon>Form_AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SelectDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SelectDatabase.Designer.cs">
+      <DependentUpon>Form_SelectDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_OpenDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_OpenDatabase.Designer.cs">
+      <DependentUpon>Form_OpenDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\GlobalData.cs" />
+    <Compile Include="Global\GlobalMessage.cs" />
+    <Compile Include="Global\OutputEventArgs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\TreeViewTool.cs" />
+    <Compile Include="TestClass.cs" />
+    <EmbeddedResource Include="Form_AliveStandardDal.resx">
+      <DependentUpon>Form_AliveStandardDal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BatchGenerator.resx">
+      <DependentUpon>Form_BatchGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GlobalSettings.resx">
+      <DependentUpon>Form_GlobalSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TemplateManager.resx">
+      <DependentUpon>Form_TemplateManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AboutBox.resx">
+      <DependentUpon>Form_AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_OpenDatabase.resx">
+      <DependentUpon>Form_OpenDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeGeneratorFoundatation\CodeGeneratorFoundatation.csproj">
+      <Project>{B65659F3-53B0-46D4-8AA6-3432F3FB6F7B}</Project>
+      <Name>CodeGeneratorFoundatation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataFoundation\DataFoundation.csproj">
+      <Project>{9733E69A-D9F1-4FC5-B4B7-91A5E823FCE8}</Project>
+      <Name>DataFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{C93082CD-4A8E-4317-B852-967BF7603A61}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_SelectDatabase.resx">
+      <DependentUpon>Form_SelectDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TemplateSettings.resx">
+      <DependentUpon>Form_TemplateSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Templates\AliveTableAccessTemplate.xml" />
+    <Content Include="Templates\AliveTableEnumTemplate.xml" />
+    <Content Include="Templates\AliveTableBaseTemplate.xml" />
+    <Content Include="Templates\AliveTableAttributeTemplate.xml" />
+    <Content Include="Templates\DataAccessTemplate.xml" />
+    <Content Include="Templates\EntityTemplate.xml" />
+    <Content Include="Templates\AliveDbTableTemplate.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

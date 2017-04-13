@@ -1,0 +1,12 @@
+E:\基础库\Bin\Log\App.config
+E:\基础库\Bin\Lionth.Foundation.Storage.dll
+E:\基础库\Bin\Lionth.Foundation.Storage.pdb
+E:\基础库\DataBase\obj\Debug\ResolveAssemblyReference.cache
+E:\基础库\DataBase\obj\Debug\Lionth.Foundation.Storage.dll
+E:\基础库\DataBase\obj\Debug\Lionth.Foundation.Storage.pdb
+E:\基础库\Output\Foundation\Log\App.config
+E:\基础库\Output\Foundation\Lionth.Foundation.Storage.dll
+E:\基础库\Output\Foundation\Lionth.Foundation.Storage.pdb
+E:\基础库\Foundation\DataBase\obj\Debug\ResolveAssemblyReference.cache
+E:\基础库\Foundation\DataBase\obj\Debug\Lionth.Foundation.Storage.dll
+E:\基础库\Foundation\DataBase\obj\Debug\Lionth.Foundation.Storage.pdb

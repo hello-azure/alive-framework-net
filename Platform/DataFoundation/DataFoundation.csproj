@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9733E69A-D9F1-4FC5-B4B7-91A5E823FCE8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alive.Foundation.Data</RootNamespace>
+    <AssemblyName>Alive.Foundation.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Foundation\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Condition\IWhereExpressionBuilder.cs" />
+    <Compile Include="Condition\OledbWhereExpressionBuilder.cs" />
+    <Compile Include="Condition\OracleWhereExpressionBuilder.cs" />
+    <Compile Include="Condition\SqlWhereExpressionBuilder.cs" />
+    <Compile Include="Condition\WhereExpressionBuilder.cs" />
+    <Compile Include="Condition\WhereExpressionBuildResult.cs" />
+    <Compile Include="Builder\BuildType.cs" />
+    <Compile Include="Builder\Interface\IAddBuilder.cs" />
+    <Compile Include="Builder\Interface\IRemoveBuilder.cs" />
+    <Compile Include="Builder\Interface\ISelectBuilder.cs" />
+    <Compile Include="Builder\Interface\IUpdateBuilder.cs" />
+    <Compile Include="Builder\OledbSqlBuilderFactory.cs" />
+    <Compile Include="Builder\Oledb\OledbAddBuilder.cs" />
+    <Compile Include="Builder\Oledb\OledbRemoveBuilder.cs" />
+    <Compile Include="Builder\Oledb\OledbSelectBuilder.cs" />
+    <Compile Include="Builder\Oledb\OledbUpdateBuilder.cs" />
+    <Compile Include="Builder\OracleBuilderFactory.cs" />
+    <Compile Include="Builder\Oracle\OracleAddBuilder.cs" />
+    <Compile Include="Builder\Oracle\OracleRemoveBuilder.cs" />
+    <Compile Include="Builder\Oracle\OracleSelectBuilder.cs" />
+    <Compile Include="Builder\Oracle\OracleUpdateBuilder.cs" />
+    <Compile Include="Builder\SqlBuilder.cs" />
+    <Compile Include="Builder\SqlBuilderFactory.cs" />
+    <Compile Include="Builder\SqlServerBuilderFactory.cs" />
+    <Compile Include="Builder\SqlServer\SqlAddBuilder.cs" />
+    <Compile Include="Builder\SqlServer\SqlRemoveBuilder.cs" />
+    <Compile Include="Builder\SqlServer\SqlSelectBuilder.cs" />
+    <Compile Include="Builder\SqlServer\SqlUpdateBuilder.cs" />
+    <Compile Include="DataCondition.cs" />
+    <Compile Include="DataFields\ByteArrayField.cs" />
+    <Compile Include="Communication\TestMessage01.cs" />
+    <Compile Include="Communication\TestMessage02.cs" />
+    <Compile Include="DataFields\BigIntField.cs" />
+    <Compile Include="DataFields\DecimalField.cs" />
+    <Compile Include="DataFields\GuidField.cs" />
+    <Compile Include="DataFields\ObjectField.cs" />
+    <Compile Include="DataFields\SingleField.cs" />
+    <Compile Include="DataFields\SmallIntField.cs" />
+    <Compile Include="DataFields\TimeSpanField.cs" />
+    <Compile Include="DataResult.cs" />
+    <Compile Include="Mapping\BoList.cs" />
+    <Compile Include="Common\BusinessFieldAttribute.cs" />
+    <Compile Include="Common\CopyIgnoreAttribute.cs" />
+    <Compile Include="Common\DataFoundation.cs" />
+    <Compile Include="DataFields\BoolField.cs" />
+    <Compile Include="DataFields\ByteField.cs" />
+    <Compile Include="DataFields\DataField.cs" />
+    <Compile Include="DataFields\DataFieldBase.cs" />
+    <Compile Include="DataFields\DateTimeField.cs" />
+    <Compile Include="DataFields\DoubleField.cs" />
+    <Compile Include="DataFields\FloatField.cs" />
+    <Compile Include="DataFields\IntField.cs" />
+    <Compile Include="DataFields\LongField.cs" />
+    <Compile Include="DataFields\StringField.cs" />
+    <Compile Include="Mapping\BoInjector.cs" />
+    <Compile Include="Mapping\BoViewBuilder.cs" />
+    <Compile Include="Mapping\BusinessObject.cs" />
+    <Compile Include="Mapping\IBoList.cs" />
+    <Compile Include="Communication\MessageBase.cs" />
+    <Compile Include="Communication\MessageListEventArgs.cs" />
+    <Compile Include="NoneDataResult.cs" />
+    <Compile Include="Serializing\DataSerializer.cs" />
+    <Compile Include="Serializing\ISerializer.cs" />
+    <Compile Include="Serializing\SerializerVersion.cs" />
+    <Compile Include="Serializing\Xml0001.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceType.cs" />
+    <Compile Include="SourceTypeAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B65659F3-53B0-46D4-8AA6-3432F3FB6F7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alive.Tools.CodeGenerator.Foundatation</RootNamespace>
+    <AssemblyName>Alive.Tools.CodeGenerator.Foundatation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\Tools\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exception\DataTypeFormatException.cs" />
+    <Compile Include="Generator\BasicGenerators\BlankLine.cs" />
+    <Compile Include="Generator\BasicGenerators\Code.cs" />
+    <Compile Include="Generator\BasicGenerators\Document.cs" />
+    <Compile Include="Generator\BasicGenerators\DocumentComment.cs" />
+    <Compile Include="Generator\BasicGenerators\FileGenerator.cs" />
+    <Compile Include="Generator\BasicGenerators\FileTitleComment.cs" />
+    <Compile Include="Generator\BasicGenerators\TypeName.cs" />
+    <Compile Include="Generator\BasicGenerators\Using.cs" />
+    <Compile Include="Generator\Common\CodeDecorator.cs" />
+    <Compile Include="Generator\Common\ICodeGenerator.cs" />
+    <Compile Include="Generator\Common\IndentManager.cs" />
+    <Compile Include="Generator\Decorators\Class.cs" />
+    <Compile Include="Generator\Decorators\Constructor.cs" />
+    <Compile Include="Generator\Decorators\Enum.cs" />
+    <Compile Include="Generator\Decorators\GetterSetter.cs" />
+    <Compile Include="Generator\Decorators\Interface.cs" />
+    <Compile Include="Generator\Decorators\Methord.cs" />
+    <Compile Include="Generator\Decorators\NameSpace.cs" />
+    <Compile Include="Generator\Decorators\Property.cs" />
+    <Compile Include="Generator\Decorators\Qualifier.cs" />
+    <Compile Include="Generator\Decorators\QualifierValue.cs" />
+    <Compile Include="Generator\Decorators\Region.cs" />
+    <Compile Include="Generator\Decorators\SingleLineComment.cs" />
+    <Compile Include="Generator\Templates\Alive\TDbTableService.cs" />
+    <Compile Include="Generator\Templates\Alive\TemplateDbTableInfo.cs" />
+    <Compile Include="Generator\Templates\Alive\TTableAccessService.cs" />
+    <Compile Include="Generator\Templates\Alive\TemplateTableAccessInfo.cs" />
+    <Compile Include="Generator\Templates\Alive\TTableAttributeService.cs" />
+    <Compile Include="Generator\Templates\Alive\TemplateTableAttributeInfo.cs" />
+    <Compile Include="Generator\Templates\TBussinessService.cs" />
+    <Compile Include="Generator\Templates\TDataAccessService.cs" />
+    <Compile Include="Generator\Templates\TemplateComplier.cs" />
+    <Compile Include="Generator\Templates\TemplateDataAccessInfo.cs" />
+    <Compile Include="Generator\Templates\TemplateEntityInfo.cs" />
+    <Compile Include="Generator\Templates\TemplateInfoBase.cs" />
+    <Compile Include="Generator\Templates\TemplateServiceBase.cs" />
+    <Compile Include="Generator\Templates\Alive\TemplateTableEnumInfo.cs" />
+    <Compile Include="Generator\Templates\Alive\TemplateTableBaseInfo.cs" />
+    <Compile Include="Generator\Templates\TEntityService.cs" />
+    <Compile Include="Generator\Templates\Alive\TTableEnumService.cs" />
+    <Compile Include="Generator\Templates\Alive\TTableBaseService.cs" />
+    <Compile Include="Generator\Templates\TypeFormatter.cs" />
+    <Compile Include="Metadata\IDataSource.cs" />
+    <Compile Include="Metadata\TableType.cs" />
+    <Compile Include="Source\IDbSource.cs" />
+    <Compile Include="LogicFacade.cs" />
+    <Compile Include="Metadata\ColumnInfo.cs" />
+    <Compile Include="Metadata\ColumnInfoList.cs" />
+    <Compile Include="Metadata\TableInfo.cs" />
+    <Compile Include="Metadata\TableInfoList.cs" />
+    <Compile Include="Source\OledbSource.cs" />
+    <Compile Include="Source\OracleSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\SqlSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBase\Database.csproj">
+      <Project>{45CBFA6D-F38E-449B-B5D2-358DD9A4AF13}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataFoundation\DataFoundation.csproj">
+      <Project>{9733E69A-D9F1-4FC5-B4B7-91A5E823FCE8}</Project>
+      <Name>DataFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{C93082CD-4A8E-4317-B852-967BF7603A61}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
