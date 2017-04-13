@@ -74,3 +74,6 @@ E:\基础库\v2\Platform\CodeGenerator\obj\Debug\Alive.Tools.CodeGenerator.Form_
 E:\基础库\v2\Platform\CodeGenerator\obj\Debug\Alive.Tools.CodeGenerator.Form_TemplateSettings.resources
 E:\基础库\v2\Platform\CodeGenerator\obj\Debug\GenerateResource.read.1.tlog
 E:\基础库\v2\Platform\CodeGenerator\obj\Debug\GenerateResource.write.1.tlog
+E:\git-workspace\alive-framework-net\Output\Tools\Alive.Tools.CodeGenerator.exe.config
+E:\git-workspace\alive-framework-net\Platform\CodeGenerator\obj\Debug\Alive.Tools.CodeGenerator.exe
+E:\git-workspace\alive-framework-net\Platform\CodeGenerator\obj\Debug\Alive.Tools.CodeGenerator.pdb
